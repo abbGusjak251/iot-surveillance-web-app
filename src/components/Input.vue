@@ -6,6 +6,7 @@
 </template>
   
 <script>
+import '../assets/tailwind.css'
 export default {
     name: 'Input',
     props: {
