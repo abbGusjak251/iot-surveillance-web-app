@@ -3,7 +3,7 @@
     <h1 class="text-xl font-bold text-gray-700 mx-auto p-2 text-center">Kameror</h1>
     <div class="space-y-5 mb-24">
       <router-link v-for="camera in cameras" :key="camera.ip" :to="{ name: 'Camera', query: { name: camera.name, ip: camera.ip} }">
-        <Card :title="camera.name" :text="camera.ip" class="mx-auto"></Card>
+        <Card :title="camera.name" :text="camera.ip" :image="camera.image" class="mx-auto"></Card>
       </router-link>
     </div>
     
