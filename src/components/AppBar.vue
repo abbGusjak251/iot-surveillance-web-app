@@ -1,6 +1,6 @@
 <template>
     <div class="w-full bg-blue-500 h-16 py-2 px-2 m-0">
-        <h1 class="text-xl font-semibold text-white ml-2 my-auto">{{ title }}</h1>
+        <h1 class="text-xl font-semibold text-white ml-2 mt-2">{{ title }}</h1>
     </div>
 </template>
   
