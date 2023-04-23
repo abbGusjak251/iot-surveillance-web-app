@@ -27,20 +27,7 @@ export default {
   },
   data() {
     return {
-      cameras: [
-        {
-          name: "Köket",
-          ip: "192.120.1.11"
-        },
-        {
-          name: "Vardagsrummet",
-          ip: "192.120.1.16"
-        },
-        {
-          name: "Garaget",
-          ip: "192.120.1.12"
-        },
-      ]
+      cameras: []
     }
   },
 }
