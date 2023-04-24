@@ -1,5 +1,5 @@
 <template>
-    <button class="rounded-md bg-yellow-400 text-yellow-400 px-3 py-2">
+    <button class="rounded-md bg-yellow-400 text-gray-700 mx-auto px-3 py-2 w-48">
         <slot></slot>
     </button>
 </template>
