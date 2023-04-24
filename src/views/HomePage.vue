@@ -11,12 +11,14 @@
           <Input placeholder="URL..." v-model="form.image"  />
           <Button @click.native="update(form, cameras, index)">Uppdatera</Button>
         </div>
-        <Button v-else @click.native="
-          form = camera
-          editCamera = index
-        " class="text-center mx-auto">
-          Redigera
-        </Button>
+        <div v-else class="text-center mx-auto">
+          <Button @click.native="
+            form = camera
+            editCamera = index
+          ">
+            Redigera
+          </Button>
+        </div>
       </div>
     </div>
     
