@@ -1,6 +1,5 @@
 import { initializeApp } from 'firebase/app'
 import { getDatabase, ref, set } from 'firebase/database'
-// ... other firebase imports
 
 const firebaseConfig = {
     apiKey: "AIzaSyAGBQfA_NoBey9iYWId8W35lHHmZmyRjIE",
@@ -11,10 +10,13 @@ const firebaseConfig = {
     messagingSenderId: "1048487773140",
     appId: "1:1048487773140:web:3763dc7329cae588164c41"
 }
-// used for the databas refs
+
+// Initalize app
 export const firebaseApp = initializeApp(firebaseConfig)
 const db = getDatabase(firebaseApp)
+// Export database reference
 export const camerasRef = ref(db, '/cameras')
+// Register a new camera
 export const registerCamera = (form, cameras) => {
     const updated_cameras = cameras
     updated_cameras.push({
@@ -24,6 +26,7 @@ export const registerCamera = (form, cameras) => {
     })
     set(camerasRef, updated_cameras)    
 }
+// Update information about existing camera
 export const updateCamera = (form, cameras, index) => {
     const updated_cameras = cameras
     updated_cameras[index] = form
